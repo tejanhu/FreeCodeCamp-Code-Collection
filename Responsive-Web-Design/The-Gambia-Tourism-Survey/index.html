@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tourism in The Gambia</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Tourism in The Gambia Survey Form</h1>
+            <p id="description" class="description text-center">This is a fictitious survey collecting data about
+                tourism in
+                The Gambia.</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name </label>
+                <input type="text" id="name" placeholder="Enter Your Name" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email </label>
+                <input type="email" id="email" placeholder="Enter Your Email" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class="hint">(optional)</span> </label>
+                <input type="number" name="age" id="number" min="15" max="105" class="form-control"
+                    placeholder="Enter Your Age" />
+            </div>
+            <div class="form-group">
+                <p>What would you like to do?</p>
+                <select id="dropdown">
+                    <option value="">Select Tourism</option>
+                    <option value="boat-ride">Boat ride along the River Gambia</option>
+                    <option value="camel-ride">Camel Riding</option>
+                    <option value="horse-ride">Horse Riding</option>
+                    <option value="quad-biking">Quad Biking</option>
+                    <option value="beach">Visit a beach</option>
+                    <option value="makasutu-culture-forest">Visit Makasutu Culture Forest</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="recommendQ">Would you recommend The Gambia for Tourism?</p>
+                <label>
+                    <input name="gambiafortoursim" value="most-certainly" type="radio" class="input-radio" />Most
+                    Certainly
+                </label>
+                <label>
+                    <input name="gambiafortoursim" value="maybe" type="radio" class="input-radio" />Maybe
+                </label>
+                <label>
+                    <input name="gambiafortoursim" value="no" type="radio" class="input-radio" />No
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What types of activities would you like to be introduced?
+                    <span class="hint">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input name="preference" class="input-checkbox" type="checkbox" value="archery" /> Archery
+                </label>
+                <label>
+                    <input name="preference" class="input-checkbox" type="checkbox" value="treasure-hunt" /> Treasure
+                    Hunt
+                </label>
+                <label>
+                    <input name="preference" class="input-checkbox" type="checkbox" value="immersion-retreat-camping" />
+                    Immersion
+                    Retreats/Camping
+                </label>
+                <label>
+                    <input name="preference" class="input-checkbox" type="checkbox" value="go-karting" /> Go karting
+                </label>
+                <label>
+                    <input name="preference" class="input-checkbox" type="checkbox" value="bjj" /> Brazilian Jiu Jitsu
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Give us your thoughts</p>
+                <textarea id="feedback" name="feedback" rows="3" cols="75"
+                    placeholder="Please enter your thoughts..."></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" id="submit" class="submit-btn" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
